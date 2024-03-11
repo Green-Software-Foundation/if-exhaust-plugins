@@ -1,7 +1,4 @@
-const CUSTOM_ERRORS = [
-  'InputValidationError',
-  'WriteFileError',
-] as const;
+const CUSTOM_ERRORS = ['InputValidationError', 'WriteFileError'] as const;
 
 type CustomErrors = {
   [K in (typeof CUSTOM_ERRORS)[number]]: ErrorConstructor;
